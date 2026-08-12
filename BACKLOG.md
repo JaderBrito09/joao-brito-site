@@ -12,8 +12,8 @@
 | :--- | :--- | :--- |
 | **Sprint 1** | Migração do Conteúdo Legado & Estrutura Markdown | 🟢 Concluído |
 | **Sprint 2** | Infraestrutura Docker, GitHub, `.env` & Easypanel Setup | 🟢 Concluído |
-| **Sprint 3** | Layout Frontend Editorial (Renderização do Acervo + Dark Mode) | 🟡 Em Progresso |
-| **Sprint 4** | Módulo Multimídia & Integração de Formulários | ⚪ Planejado |
+| **Sprint 3** | Layout Frontend Editorial (Curadoria de Posts + Dark Mode) | 🟢 Concluído |
+| **Sprint 4** | Módulo Multimídia & Integração de Formulários | 🟡 Em Progresso |
 | **Sprint 5** | Otimização SEO, Performance Lighthouse & Go-Live | 🟡 Finalizando (Aguardando SSL) |
 
 ---
