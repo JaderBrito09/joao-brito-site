@@ -79,7 +79,7 @@ Todos os artigos, crônicas e páginas do site original foram extraídos e conve
 * **RF-01:** O site deve renderizar os artigos a partir dos arquivos Markdown localizados na pasta `content/posts/`.
 * **RF-02:** O leitor deve conseguir alternar entre o modo claro (*Light*) e escuro (*Dark*).
 * **RF-03:** O site deve categorizar visualmente os artigos novos e os documentos históricos (década de 80).
-* **RF-04:** O formulário de contato deve validar nome, e-mail e mensagem e enviar dados ao endpoint configurado no `.env`.
+* **RF-04 (Escopo Ajustado):** O site foca 100% na experiência de leitura e exibição de acervo editorial/multimídia, sem formulários de contato/newsletter ativos para garantir leveza e simplicidade.
 * **RF-05:** O bloco multimídia deve permitir a reprodução direta de vídeos do YouTube e links de áudio.
 * **RF-06 (Hermes Agent GitOps):** O sistema deve aceitar atualização automática e re-deploy no Easypanel a cada `git push` realizado pelo Hermes.
 

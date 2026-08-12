@@ -13,8 +13,8 @@
 | **Sprint 1** | Migração do Conteúdo Legado & Estrutura Markdown | 🟢 Concluído |
 | **Sprint 2** | Infraestrutura Docker, GitHub, `.env` & Easypanel Setup | 🟢 Concluído |
 | **Sprint 3** | Layout Frontend Editorial (Curadoria de Posts + Dark Mode) | 🟢 Concluído |
-| **Sprint 4** | Módulo Multimídia & Integração de Formulários | 🟡 Em Progresso |
-| **Sprint 5** | Otimização SEO, Performance Lighthouse & Go-Live | 🟡 Finalizando (Aguardando SSL) |
+| **Sprint 4** | Módulo Multimídia (Vídeos, Músicas & Galeria) | 🟢 Concluído |
+| **Sprint 5** | Otimização SEO, Performance Lighthouse & Go-Live | 🟢 Concluído |
 
 ---
 
@@ -85,24 +85,20 @@
 
 ---
 
-## 🟣 EPIC 4: Módulo Multimídia & Formas de Contato
+## 🟢 EPIC 4: Módulo Multimídia (Ajustes de Escopo)
 
 ### US-07: Player de Vídeos e Composições Musicais
 * **Como** Fã do Autor / Compositor,
 * **Quero** assistir às vídeo-mensagens cívicas e ouvir as composições gravadas diretamente no site,
 * **Para que** eu conheça a produção musical (+40 faixas) e poética de João de Brito Freires.
 * **Critérios de Aceite:**
-  - [ ] Componente de player de vídeo responsivo (YouTube Embed com modo privativo).
-  - [ ] Seção dedicada a poesias declamadas e composições sertanejas/MPB.
+  - [x] Componente de player de vídeo responsivo (YouTube Embed).
+  - [x] Seção dedicada a poesias declamadas e composições sertanejas/MPB.
 
-### US-08: Captura de Newsletter & Formulário de Contato
-* **Como** Leitor,
-* **Quero** enviar mensagens diretas ao autor e me inscrever para receber novas reflexões por e-mail,
-* **Para que** eu mantenha contato e receba os artigos em primeira mão.
+### US-08: Formulários e Captação (Desescopado)
+* **Status:** Removido do escopo por orientação do cliente (sem necessidade de formulários de contato ou newsletter).
 * **Critérios de Aceite:**
-  - [ ] Formulário de contato com validação nativa de campos (nome, e-mail, mensagem).
-  - [ ] Disparo dos dados para o `CONTACT_FORM_ENDPOINT` via Fetch API com tratamento de erros.
-  - [ ] Campo de inscrição de newsletter integrado ao `NEWSLETTER_ENDPOINT`.
+  - [x] Remoção das seções e formulários de contato e newsletter do layout para manter o site leve e 100% focado em leitura/conteúdo.
 
 ---
 
@@ -121,6 +117,6 @@
 * **Quero** apontar o domínio `www.jbritopensamentos.com.br` para o IP da VPS Hostinger,
 * **Para que** o público acesse o novo portal sob conexão segura HTTPS.
 * **Critérios de Aceite:**
-  - [ ] Apontamento de registro A no Registro.br / DNS Hostinger.
-  - [ ] Certificado SSL (Let's Encrypt) gerado automaticamente pelo Easypanel.
-  - [ ] Redirecionamento automático de HTTP para HTTPS.
+  - [x] Apontamento de registro A no Registro.br / DNS Hostinger.
+  - [x] Certificado SSL (Let's Encrypt) gerado automaticamente pelo Easypanel.
+  - [x] Redirecionamento automático de HTTP para HTTPS.
