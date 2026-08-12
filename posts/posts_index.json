@@ -1,0 +1,92 @@
+[
+  {
+    "id": "01-feliz-natal-e-ano-novo",
+    "title": "Feliz Natal e Ano Novo",
+    "subtitle": "Mensagem de Felicitações Natalinas",
+    "category": "OPINIÃO",
+    "author": "João de Brito Freires",
+    "date": "2025-12-13",
+    "date_formatted": "13/12/2025",
+    "youtube_url": "https://www.youtube.com/watch?v=p1USm1V7k3c",
+    "youtube_embed": "https://www.youtube.com/embed/p1USm1V7k3c",
+    "image_url": "https://img.youtube.com/vi/p1USm1V7k3c/maxresdefault.jpg",
+    "filename": "01-feliz-natal-e-ano-novo.md"
+  },
+  {
+    "id": "02-o-homem-de-mola",
+    "title": "O Homem de Mola",
+    "subtitle": "Pensamentos Diversos",
+    "category": "OPINIÃO / PENSAMENTOS",
+    "author": "João de Brito Freires",
+    "date": "2025-10-17",
+    "date_formatted": "17/10/2025",
+    "image_url": "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/mola-mv0PZebyB0TvQNPz.jpg",
+    "filename": "02-o-homem-de-mola.md"
+  },
+  {
+    "id": "03-pensamentos",
+    "title": "Pensamentos",
+    "subtitle": "Pensamentos Diversos",
+    "category": "OPINIÃO / REFLEXÕES",
+    "author": "João de Brito Freires",
+    "date": "2025-10-14",
+    "date_formatted": "14/10/2025",
+    "image_url": "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/blog-imagem-YZ9Eo5DZLLsqK7nz.webp",
+    "filename": "03-pensamentos.md"
+  },
+  {
+    "id": "04-nossa-vida",
+    "title": "Nossa Vida",
+    "subtitle": "Somos responsáveis por nossos atos. Plante o bem para colher o bem e viva com felicidade e amor.",
+    "category": "VIDA & ÉTICA",
+    "author": "João de Brito Freires",
+    "date": "2024-05-08",
+    "date_formatted": "08/05/2024",
+    "image_url": "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/plantar-AMq834DxjqIZlXeA.jpeg",
+    "filename": "04-nossa-vida.md"
+  },
+  {
+    "id": "05-salve-o-brasil",
+    "title": "Salve o Brasil",
+    "subtitle": "Apelo contra a corrupção. O povo unido pode mudar as leis e punir os corruptos que roubam a Nação.",
+    "category": "POLÍTICA & CIDADANIA",
+    "author": "João de Brito Freires",
+    "date": "2024-05-08",
+    "date_formatted": "08/05/2024",
+    "image_url": "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/generated/generated-m7VbxM436zipM7pO.png",
+    "filename": "05-salve-o-brasil.md"
+  },
+  {
+    "id": "06-os-obstaculos",
+    "title": "Os obstáculos",
+    "subtitle": "Uma reflexão sobre perseverança, propósito e responsabilidade. A força para vencer os desafios da vida vem da fé que torna a jornada leve e vitoriosa.",
+    "category": "ESPIRITUALIDADE & FÉ",
+    "author": "João de Brito Freires",
+    "date": "2024-05-08",
+    "date_formatted": "08/05/2024",
+    "image_url": "https://images.unsplash.com/photo-1635082627989-dcd12a107364?auto=format&fit=crop&w=800",
+    "filename": "06-os-obstaculos.md"
+  },
+  {
+    "id": "07-tancredo-tiradentes",
+    "title": "Tancredo Tiradentes",
+    "subtitle": "Matéria escrita no dia 22/04/1985, justamente um dia após a morte do Presidente.",
+    "category": "ACERVO HISTÓRICO (1985)",
+    "author": "João de Brito Freires",
+    "date": "1985-04-22",
+    "date_formatted": "22/04/1985",
+    "image_url": "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/t-ou-t-Gov7eEaWHsEzT0c4.png",
+    "filename": "07-tancredo-tiradentes.md"
+  },
+  {
+    "id": "08-o-politico",
+    "title": "O Político",
+    "subtitle": "Ensaio sobre a ética da representação e a vocação do homem público.",
+    "category": "ACERVO HISTÓRICO (1985)",
+    "author": "João de Brito Freires",
+    "date": "1985-02-12",
+    "date_formatted": "12/02/1985",
+    "image_url": "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/o-politico-Fb5ldRoz2vbHEZi6.png",
+    "filename": "08-o-politico.md"
+  }
+]
