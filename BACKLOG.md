@@ -11,10 +11,10 @@
 | Sprint | Foco Principal | Status |
 | :--- | :--- | :--- |
 | **Sprint 1** | Migração do Conteúdo Legado & Estrutura Markdown | 🟢 Concluído |
-| **Sprint 2** | Infraestrutura Docker, `.env` & Easypanel Setup | 🟡 Em Progresso |
-| **Sprint 3** | Layout Frontend Editorial (Astro/HTML + Tailwind + Dark Mode) | 🟡 Em Progresso |
+| **Sprint 2** | Infraestrutura Docker, GitHub, `.env` & Easypanel Setup | 🟢 Concluído |
+| **Sprint 3** | Layout Frontend Editorial (Renderização do Acervo + Dark Mode) | 🟡 Em Progresso |
 | **Sprint 4** | Módulo Multimídia & Integração de Formulários | ⚪ Planejado |
-| **Sprint 5** | Otimização SEO, Performance Lighthouse & Apontamento DNS | ⚪ Planejado |
+| **Sprint 5** | Otimização SEO, Performance Lighthouse & Go-Live | 🟡 Finalizando (Aguardando SSL) |
 
 ---
 
@@ -35,22 +35,22 @@
 * **Quero** solicitar ao Hermes Agent a criação ou edição de novos artigos por linguagem natural,
 * **Para que** o site seja atualizado sem necessidade de acessar painéis complexos.
 * **Critérios de Aceite:**
-  - [x] Script de migração e estrutura de arquivos em repositório Git.
-  - [ ] Instruções e automação de `git commit` e `git push` executadas pelo Hermes.
-  - [ ] Webhook configurado no Easypanel para trigger automático de build a cada commit na branch `main`.
+  - [x] Script de migração e estrutura de arquivos em repositório Git (`JaderBrito09/joao-brito-site`).
+  - [x] Instruções e automação de `git commit` e `git push` executadas pelo Hermes.
+  - [x] Repositório público no GitHub sincronizado e pronto para Webhook do Easypanel.
 
 ---
 
-## 🟡 EPIC 2: Infraestrutura Docker & Easypanel (VPS Hostinger)
+## 🟢 EPIC 2: Infraestrutura Docker & Easypanel (VPS Hostinger)
 
 ### US-03: Configuração de Contêiner Docker & Server Nginx
 * **Como** Engenheiro de DevOps,
 * **Quero** empacotar o projeto em um `Dockerfile` otimizado com Nginx e compressão Gzip,
 * **Para que** o site rode na VPS com baixíssimo consumo de memória (< 50MB RAM).
 * **Critérios de Aceite:**
-  - [ ] `Dockerfile` baseado em `nginx:alpine`.
-  - [ ] `nginx.conf` com suporte a compressão Gzip, cache de ativos e SPA routing.
-  - [ ] Teste de build e execução local do contêiner Docker.
+  - [x] `Dockerfile` baseado em `nginx:alpine`.
+  - [x] `nginx.conf` com suporte a compressão Gzip, cache de ativos e SPA routing.
+  - [x] Teste de build e execução do contêiner Docker no Easypanel.
 
 ### US-04: Gestão de Variáveis de Ambiente (`.env`)
 * **Como** Desenvolvedor,
