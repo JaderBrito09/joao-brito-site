@@ -128,15 +128,15 @@
 
             <!-- Featured Post Highlight -->
             <div class="lg:col-span-5">
-                <div class="relative group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl transition-all">
+                <div onclick="openPostModal('01-feliz-natal-e-ano-novo')" class="relative group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-xl border border-slate-200 dark:border-slate-800 hover:shadow-2xl transition-all cursor-pointer">
                     <div class="relative h-60 rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800 mb-6">
-                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Manuscritos e reflexões" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://img.youtube.com/vi/p1USm1V7k3c/maxresdefault.jpg" alt="Feliz Natal e Ano Novo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">Destaque</span>
                     </div>
                     
                     <div class="space-y-3">
                         <div class="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
-                            <span><i data-lucide="calendar" class="w-3.5 h-3.5 inline mr-1"></i> 13 de Dezembro</span>
+                            <span><i data-lucide="calendar" class="w-3.5 h-3.5 inline mr-1"></i> 13 de Dezembro de 2025</span>
                             <span>•</span>
                             <span><i data-lucide="clock" class="w-3.5 h-3.5 inline mr-1"></i> 3 min de leitura</span>
                         </div>
@@ -146,9 +146,9 @@
                         <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-3">
                             Reflexões profundas de fim de ano sobre esperança, união familiar, fé renovada e os caminhos para um futuro de paz e prosperidade no Brasil.
                         </p>
-                        <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline pt-2">
+                        <button class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline pt-2">
                             Ler mensagem completa <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -159,26 +159,23 @@
     <!-- Filter / Category Tabs Section -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-b border-slate-200 dark:border-slate-800">
         <div class="flex items-center justify-between gap-4 overflow-x-auto pb-2 scrollbar-none">
-            <div class="flex items-center gap-2">
-                <button class="px-4 py-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 rounded-lg text-sm font-medium shadow-sm whitespace-nowrap">
-                    Todos os Postes
+            <div class="flex items-center gap-2" id="category-tabs">
+                <button onclick="filterCategory('all', this)" class="category-btn px-4 py-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 rounded-lg text-sm font-medium shadow-sm whitespace-nowrap transition-colors">
+                    Todos os Posts
                 </button>
-                <button class="px-4 py-2 bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-medium transition-colors whitespace-nowrap">
+                <button onclick="filterCategory('politica', this)" class="category-btn px-4 py-2 bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-medium transition-colors whitespace-nowrap">
                     Política & Sociedade
                 </button>
-                <button class="px-4 py-2 bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-medium transition-colors whitespace-nowrap">
+                <button onclick="filterCategory('pensamentos', this)" class="category-btn px-4 py-2 bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-medium transition-colors whitespace-nowrap">
                     Pensamentos Diversos
                 </button>
-                <button class="px-4 py-2 bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-medium transition-colors whitespace-nowrap">
+                <button onclick="filterCategory('historico', this)" class="category-btn px-4 py-2 bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-medium transition-colors whitespace-nowrap">
                     Documentos Históricos
-                </button>
-                <button class="px-4 py-2 bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-medium transition-colors whitespace-nowrap">
-                    Músicas & Poesia
                 </button>
             </div>
             
             <span class="text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap hidden lg:inline-block">
-                Exibindo <strong>8 publicações</strong>
+                Exibindo <strong id="posts-count">8 publicações</strong>
             </span>
         </div>
     </section>
@@ -198,10 +195,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <!-- Card 1 -->
-            <article class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between">
+            <article data-category="pensamentos" onclick="openPostModal('02-o-homem-de-mola')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
                 <div>
                     <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="O Homem de Mola" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/mola-mv0PZebyB0TvQNPz.jpg" alt="O Homem de Mola" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <span class="absolute top-3 left-3 bg-slate-900/80 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Pensamentos</span>
                     </div>
                     <div class="p-6">
@@ -216,15 +213,61 @@
                 </div>
                 <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
                     <span>Por João de Brito Freires</span>
-                    <span class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
                 </div>
             </article>
 
             <!-- Card 2 -->
-            <article class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between">
+            <article data-category="pensamentos" onclick="openPostModal('03-pensamentos')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
                 <div>
                     <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=600&q=80" alt="Salve o Brasil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/blog-imagem-YZ9Eo5DZLLsqK7nz.webp" alt="Pensamentos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-3 left-3 bg-indigo-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Pensamentos</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-slate-400 block mb-2">14/10/2025</span>
+                        <h3 class="font-serif text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors mb-3">
+                            Pensamentos e Reflexões
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
+                            Coletânea de reflexões sobre conduta diária, ética, sabedoria de vida e edificação do caráter.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
+                    <span>Por João de Brito Freires</span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article data-category="pensamentos" onclick="openPostModal('04-nossa-vida')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
+                <div>
+                    <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                        <img src="https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/plantar-AMq834DxjqIZlXeA.jpeg" alt="Nossa Vida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-3 left-3 bg-emerald-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Vida & Ética</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-slate-400 block mb-2">08/05/2024</span>
+                        <h3 class="font-serif text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors mb-3">
+                            Nossa Vida: Plantar o Bem
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
+                            Somos diretamente responsáveis por nossos atos. Uma ponderação sobre causa e efeito, amor ao próximo e paz interior.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
+                    <span>Por João de Brito Freires</span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article data-category="politica" onclick="openPostModal('05-salve-o-brasil')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
+                <div>
+                    <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                        <img src="https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/generated/generated-m7VbxM436zipM7pO.png" alt="Salve o Brasil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <span class="absolute top-3 left-3 bg-blue-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Política & Cidadania</span>
                     </div>
                     <div class="p-6">
@@ -239,15 +282,15 @@
                 </div>
                 <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
                     <span>Por João de Brito Freires</span>
-                    <span class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
                 </div>
             </article>
 
-            <!-- Card 3 -->
-            <article class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between">
+            <!-- Card 5 -->
+            <article data-category="pensamentos" onclick="openPostModal('06-os-obstaculos')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
                 <div>
                     <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1509021436468-d5103e3927d3?auto=format&fit=crop&w=600&q=80" alt="Os Obstáculos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://images.unsplash.com/photo-1635082627989-dcd12a107364?auto=format&fit=crop&w=800" alt="Os Obstáculos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <span class="absolute top-3 left-3 bg-amber-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Espiritualidade & Fé</span>
                     </div>
                     <div class="p-6">
@@ -262,12 +305,12 @@
                 </div>
                 <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
                     <span>Por João de Brito Freires</span>
-                    <span class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
                 </div>
             </article>
 
-            <!-- Card 4 (Historical Document) -->
-            <article class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between">
+            <!-- Card 6 (Historical Document) -->
+            <article data-category="historico" onclick="openPostModal('07-tancredo-tiradentes')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
                 <div>
                     <div class="h-48 bg-amber-950 overflow-hidden relative flex items-center justify-center p-6 text-center text-amber-100">
                         <div class="border border-amber-500/30 p-4 rounded-lg">
@@ -288,35 +331,12 @@
                 </div>
                 <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
                     <span>Por João de Brito Freires</span>
-                    <span class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
                 </div>
             </article>
 
-            <!-- Card 5 -->
-            <article class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between">
-                <div>
-                    <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Nossa Vida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                        <span class="absolute top-3 left-3 bg-emerald-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Vida & Ética</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs font-semibold text-slate-400 block mb-2">08/05/2024</span>
-                        <h3 class="font-serif text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors mb-3">
-                            Nossa Vida: Plantar o Bem
-                        </h3>
-                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
-                            Somos diretamente responsáveis por nossos atos. Uma ponderação sobre causa e efeito, amor ao próximo e paz interior.
-                        </p>
-                    </div>
-                </div>
-                <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
-                    <span>Por João de Brito Freires</span>
-                    <span class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
-                </div>
-            </article>
-
-            <!-- Card 6 (Historical) -->
-            <article class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between">
+            <!-- Card 7 (Historical) -->
+            <article data-category="historico" onclick="openPostModal('08-o-politico')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
                 <div>
                     <div class="h-48 bg-slate-900 overflow-hidden relative flex items-center justify-center p-6 text-center text-slate-200">
                         <div class="border border-slate-700 p-4 rounded-lg">
@@ -337,7 +357,7 @@
                 </div>
                 <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
                     <span>Por João de Brito Freires</span>
-                    <span class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
                 </div>
             </article>
 
@@ -538,6 +558,54 @@
         </div>
     </footer>
 
+    <!-- Post Modal -->
+    <div id="post-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+        <div class="relative w-full max-w-3xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden max-h-[90vh] flex flex-col my-auto">
+            <!-- Modal Header -->
+            <div class="p-6 sm:p-8 border-b border-slate-200 dark:border-slate-800 flex items-start justify-between gap-4 bg-slate-50 dark:bg-slate-950">
+                <div>
+                    <div class="flex items-center gap-3 text-xs mb-2">
+                        <span id="modal-category" class="px-2.5 py-1 rounded bg-blue-600 text-white font-semibold uppercase tracking-wider"></span>
+                        <span id="modal-date" class="text-slate-500 dark:text-slate-400"></span>
+                    </div>
+                    <h2 id="modal-title" class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white leading-tight"></h2>
+                    <p id="modal-subtitle" class="text-slate-600 dark:text-slate-400 text-sm mt-1"></p>
+                </div>
+                <button onclick="closePostModal()" class="p-2 rounded-full text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white bg-slate-200 dark:bg-slate-800 transition-colors shrink-0" title="Fechar">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Modal Body -->
+            <div id="modal-body" class="p-6 sm:p-8 overflow-y-auto space-y-4 text-slate-700 dark:text-slate-300 text-base leading-relaxed">
+            </div>
+            <!-- Modal Footer -->
+            <div class="p-4 sm:p-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex justify-between items-center text-xs text-slate-500">
+                <span id="modal-author">Por João de Brito Freires</span>
+                <button onclick="closePostModal()" class="px-5 py-2.5 bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold rounded-xl hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors">
+                    Fechar Leitura
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-start justify-center p-4 sm:p-6 pt-20">
+        <div class="relative w-full max-w-xl bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 p-6 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-4">
+                <div class="flex items-center gap-3 w-full">
+                    <i data-lucide="search" class="w-5 h-5 text-slate-400"></i>
+                    <input type="text" id="search-input" placeholder="Buscar no acervo de artigos..." class="w-full bg-transparent text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none text-base">
+                </div>
+                <button onclick="closeSearchModal()" class="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-white">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div id="search-results" class="max-h-80 overflow-y-auto space-y-2">
+                <p class="text-xs text-slate-400 text-center py-4">Digite um termo para pesquisar nos títulos e textos.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script>
         // Initialize Lucide Icons
@@ -547,6 +615,247 @@
         const themeToggleBtn = document.getElementById('theme-toggle');
         themeToggleBtn.addEventListener('click', () => {
             document.documentElement.classList.toggle('dark');
+        });
+
+        // Posts Data Repository
+        const postsData = {
+            "01-feliz-natal-e-ano-novo": {
+                title: "Feliz Natal e Ano Novo",
+                subtitle: "Mensagem de Felicitações Natalinas",
+                category: "OPINIÃO",
+                author: "João de Brito Freires",
+                date: "13/12/2025",
+                content: `
+                    <p class="mb-4">Mensagem especial de encerramento de ano com votos de esperança, paz, fortalecimento das famílias brasileiras e renovação na fé cristã.</p>
+                    <div class="aspect-video my-6 rounded-xl overflow-hidden shadow-lg border border-slate-700">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/p1USm1V7k3c" title="Mensagem de Natal e Ano Novo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="italic text-slate-500">Reflexão especial de encerramento de ano por João de Brito Freires.</p>
+                `
+            },
+            "02-o-homem-de-mola": {
+                title: "O Homem de Mola",
+                subtitle: "Pensamentos Diversos sobre Resiliência",
+                category: "PENSAMENTOS",
+                author: "João de Brito Freires",
+                date: "17/10/2025",
+                content: `
+                    <p class="mb-4 font-semibold text-lg text-blue-600 dark:text-blue-400">ARGILA.</p>
+                    <p class="mb-4">Argila a gente molda e faz dela o que a gente quer. O cristal pode sofrer um impacto e se despedaçar.</p>
+                    <p class="mb-4">Porém sou como mola de aço. Quando necessário, cedo, mas sempre volto ao ponto original, ponto de partida, com a mesma rigidez e sempre pronto a enfrentar novos impactos.</p>
+                    <p class="mb-4">Consciente que com a minha fórmula, fórmula rígida, mas sempre forte no sustento do meu desempenho e do meu trabalho.</p>
+                    <p class="mb-4 font-semibold">Porque sou assim?</p>
+                    <p class="mb-4">Porque sei que sou útil e estou dando tudo de mim, mesmo com o meu desgaste natural que sofro, mas consciente da minha utilidade.</p>
+                    <p class="mb-4">Muitos nem argila são, e tentam ser duros como cristal.</p>
+                    <p class="mb-4 font-semibold">Porque sou assim?</p>
+                    <p class="mb-4">Para ser mola foi preciso que eu passasse por uma grande transformação. Não fosse a coragem de ser mola de aço, não aguentaria tanto peso.</p>
+                    <p class="mb-4 font-bold text-slate-900 dark:text-white">Minha fórmula é de tal forma que nenhum peso me quebraria.</p>
+                `
+            },
+            "03-pensamentos": {
+                title: "Pensamentos e Reflexões",
+                subtitle: "Acervo de Frases e Sabedoria",
+                category: "PENSAMENTOS",
+                author: "João de Brito Freires",
+                date: "14/10/2025",
+                content: `
+                    <p class="mb-4">Reflexões selecionadas sobre ética, conduta diária e sabedoria de vida:</p>
+                    <blockquote class="p-4 my-4 border-s-4 border-blue-500 bg-slate-100 dark:bg-slate-800 italic rounded-r-xl">
+                        "A verdadeira nobreza do homem não está em títulos, mas na constância dos seus princípios perante as adversidades."
+                    </blockquote>
+                    <blockquote class="p-4 my-4 border-s-4 border-amber-500 bg-slate-100 dark:bg-slate-800 italic rounded-r-xl">
+                        "Quem semeia discórdia colhe solidão; quem cultiva a verdade edifica a paz para os seus descendentes."
+                    </blockquote>
+                    <p class="mb-4">A sabedoria não é fruto do acaso, mas do aprendizado diário e do compromisso contínuo com a verdade e com o bem comum.</p>
+                `
+            },
+            "04-nossa-vida": {
+                title: "Nossa Vida: Plantar o Bem",
+                subtitle: "Somos responsáveis por nossos atos",
+                category: "VIDA & ÉTICA",
+                author: "João de Brito Freires",
+                date: "08/05/2024",
+                content: `
+                    <p class="mb-4">Somos diretamente responsáveis por nossos atos. Plante o bem para colher o bem e viva com felicidade e amor.</p>
+                    <p class="mb-4">Na jornada da vida, cada pensamento e cada atitude são sementes lançadas ao solo do tempo. Aquilo que oferecemos ao mundo retorna para nós com a mesma intensidade.</p>
+                    <p class="mb-4">Não responsabilize as circunstâncias pelas suas colheitas; olhe para aquilo que tem plantado no dia a dia. A paz de espírito é a recompensa daqueles que agem com integridade e amor ao próximo.</p>
+                `
+            },
+            "05-salve-o-brasil": {
+                title: "Salve o Brasil",
+                subtitle: "Manifesto pela Ética e Cidadania",
+                category: "POLÍTICA & CIDADANIA",
+                author: "João de Brito Freires",
+                date: "08/05/2024",
+                content: `
+                    <p class="mb-4 font-serif text-lg italic text-blue-600 dark:text-blue-400">Brasil, de braços abertos, com o amor de mãe;</p>
+                    <p class="mb-4">Não sejam egoístas, entreguem o coração a todos os irmãos;</p>
+                    <p class="mb-4">Imploramos aos líderes que não possuem coração: utilizem a razão, abandonem a corrupção, tenham compaixão.</p>
+                    <p class="mb-4">Somente com a força da multidão, a lei da corrupção mudará; aqueles que fazem e fazem com que as leis sejam cumpridas, com grande rigor;</p>
+                    <p class="mb-4">Rigor contra a corrupção, devolvam o que é da Nação; nossa população labuta para assegurar o sustento.</p>
+                    <p class="mb-4">Se o Brasil estiver no exterior, com chapéu na mão, implorando a eles empréstimos oriundos de nossa Nação; é urgente parar a roubalheira, os corruptos precisam ir à prisão;</p>
+                    <p class="mb-4 font-bold text-red-600 dark:text-red-400">Larápios vorazes, vergonha da Nação.</p>
+                    <p class="mt-6 font-serif font-bold text-lg text-slate-900 dark:text-white">Salve o Brasil!</p>
+                `
+            },
+            "06-os-obstaculos": {
+                title: "Os Obstáculos",
+                subtitle: "Perseverança, Propósito e Fé",
+                category: "ESPIRITUALIDADE & FÉ",
+                author: "João de Brito Freires",
+                date: "08/05/2024",
+                content: `
+                    <p class="mb-4">Todo cidadão responsável luta incansavelmente, mesmo com os altos e baixos da vida.</p>
+                    <p class="mb-4">Jamais desiste, pois sabe do seu propósito, da sua importância, da sua responsabilidade.</p>
+                    <p class="mb-4">Vence os obstáculos sabendo que o outro não pode carregar a sua cruz.</p>
+                    <p class="mb-4">Apenas Jesus em sua vida pode torná-la leve, saudável, útil e realizar o polimento necessário para a sua vitória.</p>
+                `
+            },
+            "07-tancredo-tiradentes": {
+                title: "Tancredo Tiradentes",
+                subtitle: "Documento Histórico - 22 de Abril de 1985",
+                category: "ACERVO HISTÓRICO (1985)",
+                author: "João de Brito Freires",
+                date: "22/04/1985",
+                content: `
+                    <div class="p-4 my-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-900 dark:text-amber-200 text-xs font-mono">
+                        DOCUMENTO HISTÓRICO: Artigo escrito em 22/04/1985, justamente um dia após a morte do Presidente Tancredo Neves.
+                    </div>
+                    <p class="mb-4">Há 193 anos, justamente no dia 21 de abril de 1792, morreu Joaquim José da Silva Xavier, o Tiradentes.</p>
+                    <p class="mb-4">Hoje, 21 de abril do ano de 1985, morre Tancredo Neves. O nosso Tiradentes voltou e se foi de forma mais gratificante e diferente. Tiradentes decepado, esquartejado, cruelmente assassinado. Presidente, assistido, operado, admirado, amado, mas que a doença tomou conta insistentemente.</p>
+                    <p class="mb-4">Presidente de forma mais avançada, advogado, veio pra fazer justiça e defender sua gente. Ambos nasceram e viveram na mesma região, nas mesmas terras, com os mesmos propósitos.</p>
+                    <p class="mb-4">Tanto o Presidente quanto Tiradentes não viram, com seus olhos, o bem que fizeram a sua gente. Tiradentes? Presidente? Ou Tiradentes Presidente.</p>
+                    <p class="mb-4">Tancredo só não teve o seu gabinete odontológico. Presidente com sua forma mais ardente veio para mudar mais de vinte anos de opressão para o regime de libertação. Regime onde poucos falavam para regime onde com liberdade muitos falam.</p>
+                `
+            },
+            "08-o-politico": {
+                title: "O Político",
+                subtitle: "Ensaio sobre a Ética da Representação (1985)",
+                category: "ACERVO HISTÓRICO (1985)",
+                author: "João de Brito Freires",
+                date: "12/02/1985",
+                content: `
+                    <div class="p-4 my-4 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-900 dark:text-blue-200 text-xs font-mono">
+                        ENSAIO HISTÓRICO: Artigo escrito em 12 de Fevereiro de 1985 sobre a vocação e ética na vida pública.
+                    </div>
+                    <p class="mb-4">Para você político que tanto promete e nada faz, mas se não for assim, você não se elegerá? Virão tantos antes e depois de você para prometer. Sabemos que se você não prometer falsamente, não mentir, não usar de mais demagogia que o outro, pode ser que você não suba, não se eleja.</p>
+                    <p class="mb-4">Sabe-se que você precisa de toda essa farsa para chegar lá, mas como seria bom que você cumprisse com seus compromissos. Fizesse alguma coisa para torná-lo confiante, não pensando somente em você, em sua pessoa, sua vaidade, ou interesses pessoais.</p>
+                    <p class="mb-4">Praticar o bem como autoridade é o seu dever. Você deve e pode fazer isso. Lembre que o povo também é vossa família. Sejam mais sinceros em suas palavras e ajam com consciência para que amanhã possais ver nos olhos do vosso povo entusiasmo, alegria e progresso como se fosse o seu próprio. Como seus próprios desejos.</p>
+                    <p class="mb-4 font-semibold">Que assim sejais e sereis.</p>
+                `
+            }
+        };
+
+        // Modal Controls
+        function openPostModal(id) {
+            const post = postsData[id];
+            if (!post) return;
+
+            document.getElementById('modal-title').innerText = post.title;
+            document.getElementById('modal-subtitle').innerText = post.subtitle;
+            document.getElementById('modal-category').innerText = post.category;
+            document.getElementById('modal-date').innerText = post.date;
+            document.getElementById('modal-author').innerText = 'Por ' + post.author;
+            document.getElementById('modal-body').innerHTML = post.content;
+
+            document.getElementById('post-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+        }
+
+        function closePostModal() {
+            document.getElementById('post-modal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on click outside
+        document.getElementById('post-modal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('post-modal')) {
+                closePostModal();
+            }
+        });
+
+        // Category Filtering
+        function filterCategory(cat, btnElement) {
+            // Update Tab Styles
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.className = 'category-btn px-4 py-2 bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg text-sm font-medium transition-colors whitespace-nowrap';
+            });
+            if (btnElement) {
+                btnElement.className = 'category-btn px-4 py-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 rounded-lg text-sm font-medium shadow-sm whitespace-nowrap transition-colors';
+            }
+
+            // Filter Cards
+            const cards = document.querySelectorAll('.post-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (cat === 'all' || cardCat === cat) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            document.getElementById('posts-count').innerText = visibleCount + ' publicações';
+        }
+
+        // Search Controls
+        const searchBtn = document.getElementById('search-btn');
+        const searchModal = document.getElementById('search-modal');
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+
+        if (searchBtn) {
+            searchBtn.addEventListener('click', () => {
+                searchModal.classList.remove('hidden');
+                searchInput.focus();
+            });
+        }
+
+        function closeSearchModal() {
+            searchModal.classList.add('hidden');
+            searchInput.value = '';
+            searchResults.innerHTML = '<p class="text-xs text-slate-400 text-center py-4">Digite um termo para pesquisar nos títulos e textos.</p>';
+        }
+
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                if (!query) {
+                    searchResults.innerHTML = '<p class="text-xs text-slate-400 text-center py-4">Digite um termo para pesquisar nos títulos e textos.</p>';
+                    return;
+                }
+
+                let matches = [];
+                for (const [id, post] of Object.entries(postsData)) {
+                    if (post.title.toLowerCase().includes(query) || post.subtitle.toLowerCase().includes(query) || post.content.toLowerCase().includes(query)) {
+                        matches.push({ id, ...post });
+                    }
+                }
+
+                if (matches.length === 0) {
+                    searchResults.innerHTML = '<p class="text-xs text-slate-400 text-center py-4">Nenhum artigo encontrado para "' + query + '".</p>';
+                } else {
+                    searchResults.innerHTML = matches.map(m => `
+                        <div onclick="closeSearchModal(); openPostModal('${m.id}')" class="p-3 bg-slate-50 dark:bg-slate-800/60 rounded-xl hover:bg-blue-50 dark:hover:bg-slate-800 cursor-pointer transition-colors">
+                            <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-blue-600 text-white">${m.category}</span>
+                            <h4 class="font-serif font-bold text-slate-900 dark:text-white text-sm mt-1">${m.title}</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 truncate">${m.subtitle}</p>
+                        </div>
+                    `).join('');
+                }
+            });
+        }
+
+        // Close on Escape Key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closePostModal();
+                closeSearchModal();
+            }
         });
     </script>
 </body>
