@@ -561,27 +561,42 @@
     <!-- Post Modal -->
     <div id="post-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
         <div class="relative w-full max-w-3xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden max-h-[90vh] flex flex-col my-auto">
-            <!-- Modal Header -->
+            <!-- Modal Header / Title -->
             <div class="p-6 sm:p-8 border-b border-slate-200 dark:border-slate-800 flex items-start justify-between gap-4 bg-slate-50 dark:bg-slate-950">
                 <div>
                     <div class="flex items-center gap-3 text-xs mb-2">
                         <span id="modal-category" class="px-2.5 py-1 rounded bg-blue-600 text-white font-semibold uppercase tracking-wider"></span>
-                        <span id="modal-date" class="text-slate-500 dark:text-slate-400"></span>
                     </div>
                     <h2 id="modal-title" class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white leading-tight"></h2>
-                    <p id="modal-subtitle" class="text-slate-600 dark:text-slate-400 text-sm mt-1"></p>
+                    <p id="modal-subtitle" class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-1.5 font-medium"></p>
                 </div>
                 <button onclick="closePostModal()" class="p-2 rounded-full text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white bg-slate-200 dark:bg-slate-800 transition-colors shrink-0" title="Fechar">
                     <i data-lucide="x" class="w-6 h-6"></i>
                 </button>
             </div>
-            <!-- Modal Body -->
-            <div id="modal-body" class="p-6 sm:p-8 overflow-y-auto space-y-4 text-slate-700 dark:text-slate-300 text-base leading-relaxed">
+            
+            <!-- Modal Scrollable Content (Sequence: Imagem -> Texto -> Escrito por e Data) -->
+            <div class="p-6 sm:p-8 overflow-y-auto space-y-6 text-slate-700 dark:text-slate-300 text-base leading-relaxed">
+                <!-- 1. Imagem / Vídeo do Artigo -->
+                <div id="modal-image-container" class="rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-800 shadow-md">
+                    <img id="modal-image" src="" alt="" class="w-full max-h-80 object-cover hidden">
+                    <div id="modal-video" class="aspect-video w-full hidden"></div>
+                </div>
+
+                <!-- 2. Texto do Artigo -->
+                <div id="modal-body" class="space-y-4 text-slate-800 dark:text-slate-200">
+                </div>
+
+                <!-- 3. Dados de Escrito Por e Data -->
+                <div class="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium bg-slate-50 dark:bg-slate-950/60 p-4 rounded-xl">
+                    <span id="modal-author" class="font-bold text-slate-900 dark:text-slate-100"></span>
+                    <span id="modal-date" class="text-slate-500 dark:text-slate-400"></span>
+                </div>
             </div>
+
             <!-- Modal Footer -->
-            <div class="p-4 sm:p-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex justify-between items-center text-xs text-slate-500">
-                <span id="modal-author">Por João de Brito Freires</span>
-                <button onclick="closePostModal()" class="px-5 py-2.5 bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold rounded-xl hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors">
+            <div class="p-4 sm:p-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 flex justify-end items-center">
+                <button onclick="closePostModal()" class="px-5 py-2.5 bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold rounded-xl hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors text-xs sm:text-sm">
                     Fechar Leitura
                 </button>
             </div>
@@ -623,22 +638,20 @@
                 title: "Feliz Natal e Ano Novo",
                 subtitle: "Mensagem de Felicitações Natalinas",
                 category: "OPINIÃO",
-                author: "João de Brito Freires",
+                author: "Escrito por João de Brito Freires",
                 date: "13/12/2025",
+                youtube: "https://www.youtube.com/embed/p1USm1V7k3c",
                 content: `
                     <p class="mb-4">Mensagem especial de encerramento de ano com votos de esperança, paz, fortalecimento das famílias brasileiras e renovação na fé cristã.</p>
-                    <div class="aspect-video my-6 rounded-xl overflow-hidden shadow-lg border border-slate-700">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/p1USm1V7k3c" title="Mensagem de Natal e Ano Novo" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p class="italic text-slate-500">Reflexão especial de encerramento de ano por João de Brito Freires.</p>
                 `
             },
             "02-o-homem-de-mola": {
                 title: "O Homem de Mola",
                 subtitle: "Pensamentos Diversos sobre Resiliência",
                 category: "PENSAMENTOS",
-                author: "João de Brito Freires",
+                author: "Escrito por João de Brito Freires",
                 date: "17/10/2025",
+                image: "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/mola-mv0PZebyB0TvQNPz.jpg",
                 content: `
                     <p class="mb-4 font-semibold text-lg text-blue-600 dark:text-blue-400">ARGILA.</p>
                     <p class="mb-4">Argila a gente molda e faz dela o que a gente quer. O cristal pode sofrer um impacto e se despedaçar.</p>
@@ -656,8 +669,9 @@
                 title: "Pensamentos e Reflexões",
                 subtitle: "Acervo de Frases e Sabedoria",
                 category: "PENSAMENTOS",
-                author: "João de Brito Freires",
+                author: "Escrito por João de Brito Freires",
                 date: "14/10/2025",
+                image: "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/blog-imagem-YZ9Eo5DZLLsqK7nz.webp",
                 content: `
                     <p class="mb-4">Reflexões selecionadas sobre ética, conduta diária e sabedoria de vida:</p>
                     <blockquote class="p-4 my-4 border-s-4 border-blue-500 bg-slate-100 dark:bg-slate-800 italic rounded-r-xl">
@@ -673,8 +687,9 @@
                 title: "Nossa Vida: Plantar o Bem",
                 subtitle: "Somos responsáveis por nossos atos",
                 category: "VIDA & ÉTICA",
-                author: "João de Brito Freires",
+                author: "Escrito por João de Brito Freires",
                 date: "08/05/2024",
+                image: "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/plantar-AMq834DxjqIZlXeA.jpeg",
                 content: `
                     <p class="mb-4">Somos diretamente responsáveis por nossos atos. Plante o bem para colher o bem e viva com felicidade e amor.</p>
                     <p class="mb-4">Na jornada da vida, cada pensamento e cada atitude são sementes lançadas ao solo do tempo. Aquilo que oferecemos ao mundo retorna para nós com a mesma intensidade.</p>
@@ -685,8 +700,9 @@
                 title: "Salve o Brasil",
                 subtitle: "Manifesto pela Ética e Cidadania",
                 category: "POLÍTICA & CIDADANIA",
-                author: "João de Brito Freires",
+                author: "Escrito por João de Brito Freires",
                 date: "08/05/2024",
+                image: "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/generated/generated-m7VbxM436zipM7pO.png",
                 content: `
                     <p class="mb-4 font-serif text-lg italic text-blue-600 dark:text-blue-400">Brasil, de braços abertos, com o amor de mãe;</p>
                     <p class="mb-4">Não sejam egoístas, entreguem o coração a todos os irmãos;</p>
@@ -702,8 +718,9 @@
                 title: "Os Obstáculos",
                 subtitle: "Perseverança, Propósito e Fé",
                 category: "ESPIRITUALIDADE & FÉ",
-                author: "João de Brito Freires",
+                author: "Escrito por João de Brito Freires",
                 date: "08/05/2024",
+                image: "https://images.unsplash.com/photo-1635082627989-dcd12a107364?auto=format&fit=crop&w=800",
                 content: `
                     <p class="mb-4">Todo cidadão responsável luta incansavelmente, mesmo com os altos e baixos da vida.</p>
                     <p class="mb-4">Jamais desiste, pois sabe do seu propósito, da sua importância, da sua responsabilidade.</p>
@@ -715,8 +732,9 @@
                 title: "Tancredo Tiradentes",
                 subtitle: "Documento Histórico - 22 de Abril de 1985",
                 category: "ACERVO HISTÓRICO (1985)",
-                author: "João de Brito Freires",
+                author: "Escrito por João de Brito Freires",
                 date: "22/04/1985",
+                image: "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/t-ou-t-Gov7eEaWHsEzT0c4.png",
                 content: `
                     <div class="p-4 my-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-900 dark:text-amber-200 text-xs font-mono">
                         DOCUMENTO HISTÓRICO: Artigo escrito em 22/04/1985, justamente um dia após a morte do Presidente Tancredo Neves.
@@ -732,8 +750,9 @@
                 title: "O Político",
                 subtitle: "Ensaio sobre a Ética da Representação (1985)",
                 category: "ACERVO HISTÓRICO (1985)",
-                author: "João de Brito Freires",
+                author: "Escrito por João de Brito Freires",
                 date: "12/02/1985",
+                image: "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/o-politico-Fb5ldRoz2vbHEZi6.png",
                 content: `
                     <div class="p-4 my-4 rounded-xl bg-blue-500/10 border border-blue-500/30 text-blue-900 dark:text-blue-200 text-xs font-mono">
                         ENSAIO HISTÓRICO: Artigo escrito em 12 de Fevereiro de 1985 sobre a vocação e ética na vida pública.
@@ -751,12 +770,38 @@
             const post = postsData[id];
             if (!post) return;
 
+            // 1. Titulo e Subtitulo
             document.getElementById('modal-title').innerText = post.title;
-            document.getElementById('modal-subtitle').innerText = post.subtitle;
+            document.getElementById('modal-subtitle').innerText = post.subtitle || '';
             document.getElementById('modal-category').innerText = post.category;
-            document.getElementById('modal-date').innerText = post.date;
-            document.getElementById('modal-author').innerText = 'Por ' + post.author;
+
+            // 2. Imagem / Video na parte de cima
+            const imgContainer = document.getElementById('modal-image-container');
+            const imgEl = document.getElementById('modal-image');
+            const videoEl = document.getElementById('modal-video');
+
+            if (post.youtube) {
+                imgEl.classList.add('hidden');
+                videoEl.classList.remove('hidden');
+                videoEl.innerHTML = `<iframe class="w-full h-full" src="${post.youtube}" title="${post.title}" frameborder="0" allowfullscreen></iframe>`;
+                imgContainer.classList.remove('hidden');
+            } else if (post.image) {
+                videoEl.classList.add('hidden');
+                videoEl.innerHTML = '';
+                imgEl.src = post.image;
+                imgEl.alt = post.title;
+                imgEl.classList.remove('hidden');
+                imgContainer.classList.remove('hidden');
+            } else {
+                imgContainer.classList.add('hidden');
+            }
+
+            // 3. Texto do Artigo
             document.getElementById('modal-body').innerHTML = post.content;
+
+            // 4. Dados de Escrito Por e Data
+            document.getElementById('modal-author').innerText = post.author.startsWith('Escrito por') ? post.author : 'Escrito por ' + post.author;
+            document.getElementById('modal-date').innerText = 'Data: ' + post.date;
 
             document.getElementById('post-modal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
