@@ -1,6 +1,6 @@
 ---
-id: "04-2018-sem-título"
-title: "Sem Título"
+id: "04-2018-bullying-compreensao-superacao-e-o-papel-da-familia"
+title: "Bullying: Compreensão, Superação e o Papel da Família"
 author: "João de Brito Freires"
 date: "2018-05-02"
 date_formatted: "02/05/2018"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2018/05/algonegativo-uma-maneira-
 images: ["04-sem-título-img1.jpg"]
 ---
 
-# Sem Título
+# Bullying: Compreensão, Superação e o Papel da Família
 
 **Data de Publicação:** 02/05/2018  
 **Autor:** João de Brito Freires  

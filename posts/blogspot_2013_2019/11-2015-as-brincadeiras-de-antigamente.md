@@ -1,6 +1,6 @@
 ---
-id: "11-2015-sem-título"
-title: "Sem Título"
+id: "11-2015-as-brincadeiras-de-antigamente"
+title: "As Brincadeiras de Antigamente"
 author: "João de Brito Freires"
 date: "2015-08-10"
 date_formatted: "10/08/2015"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2015/08/as-brincadeiras-de-antiga
 images: ["11-sem-título-img1.jpg"]
 ---
 
-# Sem Título
+# As Brincadeiras de Antigamente
 
 **Data de Publicação:** 10/08/2015  
 **Autor:** João de Brito Freires  

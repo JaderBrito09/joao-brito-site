@@ -1,6 +1,6 @@
 ---
-id: "05-2018-sem-título"
-title: "Sem Título"
+id: "05-2018-o-brasil-que-eu-nao-quero-e-o-brasil-que-eu-quero"
+title: "O Brasil que Eu Não Quero e o Brasil que Eu Quero"
 author: "João de Brito Freires"
 date: "2018-04-01"
 date_formatted: "01/04/2018"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2018/04/o-brasilque-e-u-nao-quero
 images: ["05-sem-título-img1.jpg"]
 ---
 
-# Sem Título
+# O Brasil que Eu Não Quero e o Brasil que Eu Quero
 
 **Data de Publicação:** 01/04/2018  
 **Autor:** João de Brito Freires  

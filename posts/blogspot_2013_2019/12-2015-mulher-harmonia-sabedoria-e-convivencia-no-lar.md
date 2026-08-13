@@ -1,6 +1,6 @@
 ---
-id: "12-2015-sem-título"
-title: "Sem Título"
+id: "12-2015-mulher-harmonia-sabedoria-e-convivencia-no-lar"
+title: "Mulher: Harmonia, Sabedoria e Convivência no Lar"
 author: "João de Brito Freires"
 date: "2015-07-05"
 date_formatted: "05/07/2015"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2015/07/mulher.html"
 images: []
 ---
 
-# Sem Título
+# Mulher: Harmonia, Sabedoria e Convivência no Lar
 
 **Data de Publicação:** 05/07/2015  
 **Autor:** João de Brito Freires  

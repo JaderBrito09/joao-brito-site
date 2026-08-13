@@ -1,6 +1,6 @@
 ---
-id: "13-2015-sem-título"
-title: "Sem Título"
+id: "13-2015-brasil-do-meu-sonho"
+title: "Brasil do Meu Sonho"
 author: "João de Brito Freires"
 date: "2015-04-08"
 date_formatted: "08/04/2015"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2015/04/brasil-do-meu-sonho_18.ht
 images: ["13-sem-título-img1.png", "13-sem-título-img2.jpg"]
 ---
 
-# Sem Título
+# Brasil do Meu Sonho
 
 **Data de Publicação:** 08/04/2015  
 **Autor:** João de Brito Freires  

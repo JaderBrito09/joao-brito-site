@@ -1,6 +1,6 @@
 ---
-id: "20-2014-sem-título"
-title: "Sem Título"
+id: "20-2014-iptu-57-8-e-inaceitavel"
+title: "IPTU: 57,8% É Inaceitável!"
 author: "João de Brito Freires"
 date: "2014-11-26"
 date_formatted: "26/11/2014"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2014/11/mocao-de-repudio-de-coaut
 images: ["20-sem-título-img1.jpg"]
 ---
 
-# Sem Título
+# IPTU: 57,8% É Inaceitável!
 
 **Data de Publicação:** 26/11/2014  
 **Autor:** João de Brito Freires  

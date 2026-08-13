@@ -1,6 +1,6 @@
 ---
-id: "10-2015-sem-título"
-title: "Sem Título"
+id: "10-2015-antigamente-01-retrospectiva-da-epoca-ao-momento"
+title: "Antigamente 01: Retrospectiva da Época ao Momento"
 author: "João de Brito Freires"
 date: "2015-09-29"
 date_formatted: "29/09/2015"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2015/09/antigamente_58.html"
 images: ["10-sem-título-img1.jpg"]
 ---
 
-# Sem Título
+# Antigamente 01: Retrospectiva da Época ao Momento
 
 **Data de Publicação:** 29/09/2015  
 **Autor:** João de Brito Freires  

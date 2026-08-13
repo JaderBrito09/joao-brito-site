@@ -1,6 +1,6 @@
 ---
-id: "06-2017-sem-título"
-title: "Sem Título"
+id: "06-2017-parlamento-podre-e-insustentavel"
+title: "Parlamento Podre e Insustentável"
 author: "João de Brito Freires"
 date: "2017-11-06"
 date_formatted: "06/11/2017"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2017/11/parlamento-podre-como-fun
 images: ["06-sem-título-img1.jpg"]
 ---
 
-# Sem Título
+# Parlamento Podre e Insustentável
 
 **Data de Publicação:** 06/11/2017  
 **Autor:** João de Brito Freires  

@@ -1,6 +1,6 @@
 ---
-id: "03-2018-sem-título"
-title: "Sem Título"
+id: "03-2018-a-bandeira-da-vida-o-brasil-que-queremos"
+title: "A Bandeira da Vida: O Brasil que Queremos"
 author: "João de Brito Freires"
 date: "2018-11-12"
 date_formatted: "12/11/2018"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2018/11/a-bandeira-da-vida.html"
 images: ["03-sem-título-img1.jpg"]
 ---
 
-# Sem Título
+# A Bandeira da Vida: O Brasil que Queremos
 
 **Data de Publicação:** 12/11/2018  
 **Autor:** João de Brito Freires  

@@ -1,6 +1,6 @@
 ---
-id: "07-2017-sem-título"
-title: "Sem Título"
+id: "07-2017-antigamente-02-retrospectiva-da-epoca-ao-momento"
+title: "Antigamente 02: Retrospectiva da Época ao Momento"
 author: "João de Brito Freires"
 date: "2017-01-31"
 date_formatted: "31/01/2017"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2017/01/antigamente_31.html"
 images: ["07-sem-título-img1.png"]
 ---
 
-# Sem Título
+# Antigamente 02: Retrospectiva da Época ao Momento
 
 **Data de Publicação:** 31/01/2017  
 **Autor:** João de Brito Freires  

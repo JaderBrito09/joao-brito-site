@@ -1,6 +1,6 @@
 ---
-id: "09-2016-sem-título"
-title: "Sem Título"
+id: "09-2016-o-brasil-o-que-esperamos-de-ti"
+title: "Ó! Brasil, o que Esperamos de Ti?"
 author: "João de Brito Freires"
 date: "2016-05-11"
 date_formatted: "11/05/2016"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2016/05/o-brasil-o-brasil-o-que-e
 images: ["09-sem-título-img1.jpg"]
 ---
 
-# Sem Título
+# Ó! Brasil, o que Esperamos de Ti?
 
 **Data de Publicação:** 11/05/2016  
 **Autor:** João de Brito Freires  

@@ -1,6 +1,6 @@
 ---
-id: "01-2019-sem-título"
-title: "Sem Título"
+id: "01-2019-celular-exclusivo-para-criancas-e-jovens"
+title: "Celular Exclusivo para Crianças e Jovens"
 author: "João de Brito Freires"
 date: "2019-05-16"
 date_formatted: "16/05/2019"
@@ -9,7 +9,7 @@ original_link: "https://jbfreires.blogspot.com/2019/05/o-que-pensamos-celular-ex
 images: ["01-sem-título-img1.jpg", "01-sem-título-img2.jpg"]
 ---
 
-# Sem Título
+# Celular Exclusivo para Crianças e Jovens
 
 **Data de Publicação:** 16/05/2019  
 **Autor:** João de Brito Freires  
