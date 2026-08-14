@@ -88,5 +88,27 @@
     "date_formatted": "12/02/1985",
     "image_url": "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/o-politico-Fb5ldRoz2vbHEZi6.png",
     "filename": "08-o-politico.md"
+  },
+  {
+    "id": "51-2013-angústias",
+    "title": "Angústias",
+    "subtitle": "Quando a distância dos filhos aperta o coração, a força e proteção vêm de Deus.",
+    "category": "ESPIRITUALIDADE & FÉ",
+    "author": "João de Brito Freires",
+    "date": "2013-10-23",
+    "date_formatted": "23/10/2013",
+    "image_url": "posts/imagens/51-angustias-img1.png",
+    "filename": "51-2013-angústias.md"
+  },
+  {
+    "id": "48-2013-medite",
+    "title": "MEDITE!",
+    "subtitle": "Reflexão sobre recomeço, reflexão e a pureza de espírito.",
+    "category": "OPINIÃO / PENSAMENTOS",
+    "author": "João de Brito Freires",
+    "date": "2013-11-19",
+    "date_formatted": "19/11/2013",
+    "image_url": "posts/imagens/48-medite-img1.png",
+    "filename": "48-2013-medite.md"
   }
 ]

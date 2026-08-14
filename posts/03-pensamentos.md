@@ -10,7 +10,7 @@ image_url: "https://assets.zyrosite.com/YbNJ0gV6Q2S0VNGG/blog-imagem-YZ9Eo5DZLLs
 
 # Pensamentos
 
-**Subtítulo:** Pensamentos Diversos  
+**Subtítulo:** Os mais diversos e bons pensamentos  
 **Categoria:** OPINIÃO / REFLEXÕES  
 **Autor:** João de Brito Freires  
 **Data:** 14/10/2025  

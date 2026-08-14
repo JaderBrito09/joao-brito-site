@@ -175,7 +175,7 @@
             </div>
             
             <span class="text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap hidden lg:inline-block">
-                Exibindo <strong id="posts-count">8 publicações</strong>
+                Exibindo <strong id="posts-count">10 publicações</strong>
             </span>
         </div>
     </section>
@@ -352,6 +352,52 @@
                         </h3>
                         <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
                             Artigo clássico de 1985 sobre o dever do homem público, a vocação política genuína e o compromisso ético com o bem comum.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
+                    <span>Por João de Brito Freires</span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
+                </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article data-category="pensamentos" onclick="openPostModal('51-2013-angústias')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
+                <div>
+                    <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                        <img src="posts/imagens/51-angustias-img1.png" alt="Angústias" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-3 left-3 bg-purple-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Espiritualidade & Fé</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-slate-400 block mb-2">23/10/2013</span>
+                        <h3 class="font-serif text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors mb-3">
+                            Angústias
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
+                            Quando as circunstâncias e o trabalho nos afastam da convivência com a família, a força divina e a oração amparam o coração e protegem os filhos.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
+                    <span>Por João de Brito Freires</span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
+                </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article data-category="pensamentos" onclick="openPostModal('48-2013-medite')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
+                <div>
+                    <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                        <img src="posts/imagens/48-medite-img1.png" alt="MEDITE!" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-3 left-3 bg-indigo-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Pensamentos</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-slate-400 block mb-2">19/11/2013</span>
+                        <h3 class="font-serif text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors mb-3">
+                            MEDITE!
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
+                            Uma reflexão sobre recuar ao ponto de partida nas horas de escuridão e reencontrar a clareza através da pureza de espírito.
                         </p>
                     </div>
                 </div>
@@ -776,8 +822,37 @@
                     <p class="mb-4">Praticar o bem como autoridade é o seu dever. Você deve e pode fazer isso. Lembre que o povo também é vossa família. Sejam mais sinceros em suas palavras e ajam com consciência para que amanhã possais ver nos olhos do vosso povo entusiasmo, alegria e progresso como se fosse o seu próprio. Como seus próprios desejos.</p>
                     <p class="mb-4 font-semibold">Que assim sejais e sereis.</p>
                 `
+            },
+            "51-2013-angústias": {
+                title: "Angústias",
+                subtitle: "Quando a distância dos filhos aperta o coração, a força e proteção vêm de Deus.",
+                category: "ESPIRITUALIDADE & FÉ",
+                author: "Escrito por João de Brito Freires",
+                date: "23/10/2013",
+                image: "posts/imagens/51-angustias-img1.png",
+                content: `
+                    <p class="mb-4">Às vezes as circunstâncias da vida, o trabalho, o desejo de conseguir o melhor, separa-nos por horas, semanas, talvez meses ou anos de nossos filhos. Quando estamos distantes, tem dia que sentimos uma angústia tão grande, mas tão grande, que só conseguimos suportar com a força da necessidade, com a força MAIOR, força CRIADORA, força DIVINA.</p>
+                    <p class="mb-4">Quase não os encontramos, tornando o desejo de estar junto, participando de seu crescimento, de suas brincadeiras, suas alegrias, suas frustrações e tristezas uma angústia. Ao partir levamos conosco a dor e a tristeza, mas levamos também a esperança de dias melhores, a busca pelo sustento da família e a certeza de que DEUS os confiou a você e irá capacitá-lo para cumprir esta missão.</p>
+                    <p class="mb-4">É crendo nisso que faço. Mas sempre de onde estou, quer de dia quer de noite, curvo-me ao SENHOR em oração, pedindo-lhe sempre proteção.</p>
+                    <p class="mb-4">A verdadeira proteção não é o homem que dá ao seu filho, mas o Senhor. Sábio são os homens que realizam as suas obrigações e responsabilidades com amor, alicerçados nos ensinamentos que o Senhor lhe confiou. Assim podem trabalhar e viver tranqüilos, pois sabem que seu lar, sua família, está coberta pela mão de Deus.</p>
+                    <p class="mb-4 font-medium text-blue-600 dark:text-blue-400">Mãos estas que sempre recebemos quando buscamos, quando pedimos, quando oramos.</p>
+                `
+            },
+            "48-2013-medite": {
+                title: "MEDITE!",
+                subtitle: "Reflexão sobre recomeço, humildade e a pureza de espírito.",
+                category: "PENSAMENTOS",
+                author: "Escrito por João de Brito Freires",
+                date: "19/11/2013",
+                image: "posts/imagens/48-medite-img1.png",
+                content: `
+                    <p class="mb-4">Vou subindo até uma determinada altura, quando estou quase chegando à luz se apaga. Desço à profundidade do abismo até um determinado ponto e a luz volta a acender.</p>
+                    <p class="mb-4">O que faço neste momento? Reflito, paro e penso. Então volto ao ponto de partida, ponto original. Eis aí a solução!</p>
+                    <p class="mb-4 font-serif font-semibold text-lg text-blue-600 dark:text-blue-400">Jesus disse: não quero que sejas como criança, mas que haja com a pureza de uma criança.</p>
+                `
             }
         };
+        postsData["51-2013-angustias"] = postsData["51-2013-angústias"];
 
         // Modal Controls
         function openPostModal(id) {
