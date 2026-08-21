@@ -110,5 +110,27 @@
     "date_formatted": "19/11/2013",
     "image_url": "posts/imagens/48-medite-img1.png",
     "filename": "48-2013-medite.md"
+  },
+  {
+    "id": "47-2013-luz-divina",
+    "title": "Luz Divina",
+    "subtitle": "Uma prece fervorosa pedindo que a luz e a força de Deus nos protejam contra as tentações e o negativo.",
+    "category": "ESPIRITUALIDADE & FÉ",
+    "author": "João de Brito Freires",
+    "date": "2013-11-21",
+    "date_formatted": "21/11/2013",
+    "image_url": "posts/imagens/47-luz-divina-img1.png",
+    "filename": "47-2013-luz-divina.md"
+  },
+  {
+    "id": "46-2013-sistema-de-telefônia",
+    "title": "Sistema de Telefonia",
+    "subtitle": "Reflexão crítica sobre as cobranças e o serviço de telefonia móvel e pré-pago no Brasil.",
+    "category": "POLÍTICA & SOCIEDADE",
+    "author": "João de Brito Freires",
+    "date": "2013-11-26",
+    "date_formatted": "26/11/2013",
+    "image_url": "posts/imagens/46-sistema-de-telefonia-img1.png",
+    "filename": "46-2013-sistema-de-telefônia.md"
   }
 ]
