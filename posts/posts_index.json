@@ -132,5 +132,27 @@
     "date_formatted": "26/11/2013",
     "image_url": "posts/imagens/46-sistema-de-telefonia-img1.png",
     "filename": "46-2013-sistema-de-telefônia.md"
+  },
+  {
+    "id": "45-2013-sofremos-é-porque-queremos",
+    "title": "Sofremos é porque Queremos?",
+    "subtitle": "Quando nascemos, somos uma pedra polida revestida pelo Criador. Com o tempo, as escolhas e aprendizagens definem nossa lapidação.",
+    "category": "OPINIÃO / REFLEXÕES",
+    "author": "João de Brito Freires",
+    "date": "2013-11-28",
+    "date_formatted": "28/11/2013",
+    "image_url": "posts/imagens/45-sofremos-e-porque-queremos-img1.jpg",
+    "filename": "45-2013-sofremos-é-porque-queremos.md"
+  },
+  {
+    "id": "44-2013-sofremos-é-por-que-queremos-parte-2",
+    "title": "Sofremos é porque Queremos? (parte 2)",
+    "subtitle": "A lapidação pessoal depende de sabermos falar, ouvir e escolher o caminho do amor e do perdão.",
+    "category": "OPINIÃO / REFLEXÕES",
+    "author": "João de Brito Freires",
+    "date": "2013-12-05",
+    "date_formatted": "05/12/2013",
+    "image_url": "posts/imagens/45-sofremos-e-porque-queremos-img1.jpg",
+    "filename": "44-2013-sofremos-é-por-que-queremos-parte-2.md"
   }
 ]
