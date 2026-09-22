@@ -20,6 +20,10 @@
 
 ## 🔴 EPIC 1: Migração de Conteúdo & Gestão via Markdown (Hermes Agent)
 
+### DEM-001: Conclusão da Publicação Semanal #05 (Posts 41 e 40)
+* **Demanda:** Finalizar a inserção dos cards HTML e dados do JS (`postsData`) no `index.html` referentes ao Lote #05 (`41-2013-feliz-2014` e `40-2014-caça-aos-gatos-ratos`), atualizar status do cronograma (`CRONOGRAMA_POSTAGENS.md` e `cronograma_postagens.csv`) para `🟢 Publicado` e realizar o commit/push no Git.
+* **Status:** 🟢 Concluído
+
 ### US-01: Extração e Conversão dos Artigos Legados
 * **Como** Desenvolvedor / Hermes Agent,
 * **Quero** converter todas as postagens e páginas do site anterior em arquivos Markdown com Frontmatter,

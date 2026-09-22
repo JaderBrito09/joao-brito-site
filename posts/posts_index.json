@@ -154,5 +154,49 @@
     "date_formatted": "05/12/2013",
     "image_url": "posts/imagens/45-sofremos-e-porque-queremos-img1.jpg",
     "filename": "44-2013-sofremos-é-por-que-queremos-parte-2.md"
+  },
+  {
+    "id": "43-2013-mensagem-de-natal",
+    "title": "Mensagem de Natal (2013)",
+    "subtitle": "Data Universal de reflexão e comemoração do nascimento de Jesus Cristo, contra o consumismo e o esquecimento espiritual.",
+    "category": "ESPIRITUALIDADE & FÉ",
+    "author": "João de Brito Freires",
+    "date": "2013-12-16",
+    "date_formatted": "16/12/2013",
+    "image_url": "posts/imagens/43-mensagem-de-natal-img1.png",
+    "filename": "43-2013-mensagem-de-natal.md"
+  },
+  {
+    "id": "42-2013-mensagem-de-natal",
+    "title": "Mensagem de Natal - Edição Especial",
+    "subtitle": "Edição especial com mensagem de felicitações de Natal e reflexões de fim de ano por João de Brito Freires.",
+    "category": "ESPIRITUALIDADE & FÉ",
+    "author": "João de Brito Freires",
+    "date": "2013-12-19",
+    "date_formatted": "19/12/2013",
+    "image_url": "posts/imagens/43-mensagem-de-natal-img1.png",
+    "filename": "42-2013-mensagem-de-natal.md"
+  },
+  {
+    "id": "41-2013-feliz-2014",
+    "title": "Feliz 2014",
+    "subtitle": "Reflexão de Ano Novo sobre planejamento, perseverança e otimismo para o ano de 2014.",
+    "category": "OPINIÃO / REFLEXÕES",
+    "author": "João de Brito Freires",
+    "date": "2013-12-28",
+    "date_formatted": "28/12/2013",
+    "image_url": "posts/imagens/41-feliz-2014-img1.png",
+    "filename": "41-2013-feliz-2014.md"
+  },
+  {
+    "id": "40-2014-caça-aos-gatos-ratos",
+    "title": "Caça aos Gatos-Ratos",
+    "subtitle": "Crônica alegórica sobre a ambição, a corrupção e a justiça.",
+    "category": "POLÍTICA & SOCIEDADE",
+    "author": "João de Brito Freires",
+    "date": "2014-01-06",
+    "date_formatted": "06/01/2014",
+    "image_url": "posts/imagens/40-caça-aos-gatos-ratos-img1.png",
+    "filename": "40-2014-caça-aos-gatos-ratos.md"
   }
 ]
