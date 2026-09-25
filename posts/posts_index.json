@@ -158,7 +158,7 @@
   {
     "id": "43-2013-mensagem-de-natal",
     "title": "Mensagem de Natal (2013)",
-    "subtitle": "Data Universal de reflexão e comemoração do nascimento de Jesus Cristo, contra o consumismo e o esquecimento espiritual.",
+    "subtitle": "Data Universal de reflexão sobre o nascimento de Jesus Cristo, contra o consumismo e o esquecimento espiritual.",
     "category": "ESPIRITUALIDADE & FÉ",
     "author": "João de Brito Freires",
     "date": "2013-12-16",
@@ -198,5 +198,27 @@
     "date_formatted": "06/01/2014",
     "image_url": "posts/imagens/40-caça-aos-gatos-ratos-img1.png",
     "filename": "40-2014-caça-aos-gatos-ratos.md"
+  },
+  {
+    "id": "39-2014-a-alegria",
+    "title": "A Alegria",
+    "subtitle": "Pensamentos e citações sobre a alegria como fonte de saúde, virtude e plenitude de vida.",
+    "category": "OPINIÃO / REFLEXÕES",
+    "author": "João de Brito Freires",
+    "date": "2014-01-14",
+    "date_formatted": "14/01/2014",
+    "image_url": "posts/imagens/39-a-alegria-img1.png",
+    "filename": "39-2014-a-alegria.md"
+  },
+  {
+    "id": "38-2014-quer-viver-ainda-mais-feliz-use-tempero",
+    "title": "Quer Viver Mais Feliz? Use Tempero",
+    "subtitle": "Reflexão sobre como o tempero certo das palavras e atitudes dá sabor e equilíbrio à vida.",
+    "category": "OPINIÃO / REFLEXÕES",
+    "author": "João de Brito Freires",
+    "date": "2014-01-21",
+    "date_formatted": "21/01/2014",
+    "image_url": "posts/imagens/38-quer-viver-ainda-mais-feliz-use-tempero-img1.png",
+    "filename": "38-2014-quer-viver-ainda-mais-feliz-use-tempero.md"
   }
 ]
