@@ -220,5 +220,27 @@
     "date_formatted": "21/01/2014",
     "image_url": "posts/imagens/38-quer-viver-ainda-mais-feliz-use-tempero-img1.png",
     "filename": "38-2014-quer-viver-ainda-mais-feliz-use-tempero.md"
+  },
+  {
+    "id": "37-2014-que-país-é-este",
+    "title": "QUE PAÍS É ESTE?",
+    "subtitle": "Reflexão sobre cidadania, política, impunidade e o futuro do Brasil.",
+    "category": "POLÍTICA & SOCIEDADE",
+    "author": "João de Brito Freires",
+    "date": "2014-02-03",
+    "date_formatted": "03/02/2014",
+    "image_url": "posts/imagens/37-que-país-é-este-img1.png",
+    "filename": "37-2014-que-país-é-este.md"
+  },
+  {
+    "id": "36-2014-a-vida",
+    "title": "A vida",
+    "subtitle": "Homenagem ao neto Mateus e reflexões sobre o milagre da criação, a família e o papel de pais e avós.",
+    "category": "OPINIÃO / REFLEXÕES",
+    "author": "João de Brito Freires",
+    "date": "2014-02-19",
+    "date_formatted": "19/02/2014",
+    "image_url": "posts/imagens/36-a-vida-img1.png",
+    "filename": "36-2014-a-vida.md"
   }
 ]

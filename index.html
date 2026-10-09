@@ -175,7 +175,7 @@
             </div>
             
             <span class="text-xs text-slate-500 dark:text-slate-400 whitespace-nowrap hidden lg:inline-block">
-                Exibindo <strong id="posts-count">20 publicações</strong>
+                Exibindo <strong id="posts-count">22 publicações</strong>
             </span>
         </div>
     </section>
@@ -628,6 +628,52 @@
                         </h3>
                         <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
                             Reflexão sobre como o tempero certo das palavras e atitudes dá sabor e equilíbrio à vida.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
+                    <span>Por João de Brito Freires</span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
+                </div>
+            </article>
+
+            <!-- Card 20 -->
+            <article data-category="politica" onclick="openPostModal('37-2014-que-país-é-este')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
+                <div>
+                    <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                        <img src="posts/imagens/37-que-país-é-este-img1.png" alt="QUE PAÍS É ESTE?" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-3 left-3 bg-red-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Política & Sociedade</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-slate-400 block mb-2">03/02/2014</span>
+                        <h3 class="font-serif text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors mb-3">
+                            QUE PAÍS É ESTE?
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
+                            Reflexão sobre cidadania, política, impunidade e o futuro do Brasil.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-2 border-t border-slate-100 dark:border-slate-800/50 flex items-center justify-between text-xs text-slate-500">
+                    <span>Por João de Brito Freires</span>
+                    <button class="text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Ler artigo <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
+                </div>
+            </article>
+
+            <!-- Card 21 -->
+            <article data-category="pensamentos" onclick="openPostModal('36-2014-a-vida')" class="post-card bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-blue-500/50 transition-all hover:shadow-lg group flex flex-col justify-between cursor-pointer">
+                <div>
+                    <div class="h-48 bg-slate-200 dark:bg-slate-800 overflow-hidden relative">
+                        <img src="posts/imagens/36-a-vida-img1.png" alt="A vida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <span class="absolute top-3 left-3 bg-amber-600 text-white backdrop-blur-md text-xs px-2.5 py-1 rounded-md">Opinião / Reflexões</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-slate-400 block mb-2">19/02/2014</span>
+                        <h3 class="font-serif text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors mb-3">
+                            A vida
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed line-clamp-3">
+                            Homenagem ao neto Mateus e reflexões sobre o milagre da criação, a família e o papel de pais e avós.
                         </p>
                     </div>
                 </div>
@@ -1246,6 +1292,66 @@
                     <p class="mb-4">O tempero certo nos conduz a uma vida saudável, naturally feliz. Se quiseres aprender a temperar sua vida, recomendo-lhe o melhor livro de receitas existente que é a Bíblia Sagrada. Nela encontrarás os ingredientes necessários para prolongar a vida e transformá-la num banquete cheio de delícias e sabores.</p>
                     <p class="mb-4 text-xs text-slate-500 dark:text-slate-400">Autor: João de Brito Freires em Janeiro de 2014.</p>
                 `
+            },
+            "37-2014-que-país-é-este": {
+                title: "QUE PAÍS É ESTE?",
+                subtitle: "Reflexão sobre cidadania, política, impunidade e o futuro do Brasil.",
+                category: "POLÍTICA & SOCIEDADE",
+                author: "Escrito por João de Brito Freires",
+                date: "03/02/2014",
+                image: "posts/imagens/37-que-país-é-este-img1.png",
+                content: `
+                    <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <img src="posts/imagens/37-que-país-é-este-img1.png" alt="QUE PAÍS É ESTE? parte 1" class="w-full rounded-lg border border-slate-200 dark:border-slate-800">
+                        <img src="posts/imagens/37-que-país-é-este-img2.png" alt="QUE PAÍS É ESTE? parte 2" class="w-full rounded-lg border border-slate-200 dark:border-slate-800">
+                        <img src="posts/imagens/37-que-país-é-este-img3.png" alt="QUE PAÍS É ESTE? parte 3" class="w-full rounded-lg border border-slate-200 dark:border-slate-800">
+                        <img src="posts/imagens/37-que-país-é-este-img4.png" alt="QUE PAÍS É ESTE? parte 4" class="w-full rounded-lg border border-slate-200 dark:border-slate-800">
+                    </div>
+                    <p class="mb-4">Que País É este, onde os bandidos estão e andam bem armados e a população não. Os homens de bem, em suas casas ou trabalho, estão em prisão.</p>
+                    <p class="mb-4">Enquanto os polícias, responsáveis pela nossa proteção, possuem em sua cinta um simples REVÓLVER. Os bandidos estão com METRALHADORA em suas mãos.</p>
+                    <p class="mb-4">Os encapuzados, fazendo quebra-quebra, saques e roubos, sem punição. Se a polícia prende, as LEIS fracas, não lhes dão sustentação.</p>
+                    <p class="mb-4">Hoje presos. Amanhã soltos. Com a certeza da impunidade continuam promovendo pânico a todos os HOMENS DE BEM que, com seu trabalho, sua retidão, sustentam e engrandecem esta NAÇÃO.</p>
+                    <p class="mb-4">Muitos deles até preferem a prisão, pois lá eles comem, bebem e ainda tem um bom salário, um salário BÃO.</p>
+                    <p class="mb-4">Enquanto isso, os que contribuem com IMPOSTOS tem que FECHAR AS PORTAS, protegendo o seu patrimônio, contra a ação dos vândalos, do arrastão.</p>
+                    <p class="mb-4">Como viverão as autoridades, pois todos dependem dos CONTRIBUINTES, DOS EMPRESÁRIOS, COMERCIANTES. Sem eles não haverá impostos.</p>
+                    <p class="mb-4">É preciso que as AUTORIDADES CONSTITUÍDAS percam o medo, se encorajem, não preocupem apenas com a sua ELEIÇÃO ou REELEIÇÃO. Pense no bem maior que podem fazer a Nação.</p>
+                    <p class="mb-4 font-semibold text-blue-600 dark:text-blue-400">NÃO FAÇAM DA POLÍTICA, UMA PROFISSÃO.</p>
+                    <p class="mb-4">Se não são capazes de fazer algo para coibir os que praticam a iniquidade com leis ou ações, ou de prevenir com orientação e educação, contribuindo para a formação do cidadão, deixem o ESPAÇO. Quem sabe apareça políticos novos, capazes de dar esta tão sonhada contribuição.</p>
+                    <p class="mb-4">Quem sabe SEUS FILHOS, SEUS NETOS, possam viver na PAZ.</p>
+                    <p class="mb-4">O cidadão precisa TRABALHAR, PLANTAR, COLHER, PARA SUA PRÓPRIA SOBREVIVÊNCIA, E SUSTENTAR A NAÇÃO. Não dá para viver acuados, entocados como um animalzinho, com medo, do predador.</p>
+                    <p class="mb-4">SE HOUVESSE UM TRABALHO CONTÍNUO, EDUCATIVO E DE PREVENÇÃO, TALVEZ NÃO TIVESSEMOS ENCAPUZADOS, NEM BANDIDOS. Quem sabe um dia, possamos viver todos como irmãos.</p>
+                    <p class="mb-4">Sei que este é um trabalho que não dá resultado POLÍTICO DE IMEDIATO, mas se não houver UM TRABALHO, uma CONSCIENTIZAÇÃO, como ficará o amanhã dos nossos FILHOS, NETOS. E o futuro da NAÇÃO?</p>
+                    <p class="mb-4 font-bold">PENSE BEM É TEMPO DE ELEIÇÃO, pense no hoje, no amanhã. O POVO NÃO AGUENTA MAIS TANTA MALDADE, DESONESTIDADE, DESORDEM E CORRUPÇÃO.</p>
+                    <p class="mb-4 font-semibold text-blue-600 dark:text-blue-400">QUANDO FECHARMOS O FUNDO DO SACO DA AMBIÇÃO PODEREMOS RESPIRAR E DIZER AOS NOSSOS FILHOS: O BRASIL NÃO TEM MAIS CORRUPÇÃO.</p>
+                    <p class="mb-4">COM CERTEZA NÃO HAVERÁ TANTA GENTE DESALOJADA, DOENTE, DESEMPREGADA, FUMANDO, BEBENDO, ROUBANDO, MATANDO, DESTRUINDO E SENDO DESTRUÍDO NÃO. (ENTÃO VAMOS PODER GRITAR BEM ALTO, VIVA O POVO...VIVA A NOSSA NAÇÃO).</p>
+                    <p class="mb-4 text-xs text-slate-500 dark:text-slate-400">Autor: João de Brito Freires, Janeiro de 2014.</p>
+                `
+            },
+            "36-2014-a-vida": {
+                title: "A vida",
+                subtitle: "Homenagem ao neto Mateus e reflexões sobre o milagre da criação, a família e o papel de pais e avós.",
+                category: "OPINIÃO / REFLEXÕES",
+                author: "Escrito por João de Brito Freires",
+                date: "19/02/2014",
+                image: "posts/imagens/36-a-vida-img1.png",
+                content: `
+                    <div class="mb-6">
+                        <img src="posts/imagens/36-a-vida-img1.png" alt="A vida" class="w-full rounded-lg border border-slate-200 dark:border-slate-800">
+                    </div>
+                    <p class="mb-4">A VIDA, TUDO É MISTÉRIO. O que mais me impressiona é o milagre da reprodução. É a luta do espermatozóide, pelo seu espaço, pela vida. E aí que percebemos que a luta pela vida é constante e prazerosa, mas só quem luta e acredita nela alcança a vitória.</p>
+                    <p class="mb-4">Os filhos, a maior esperança do casal. Na expectativa que o CRIADOR consinta aos seus a tão sonhada sementinha. O maior presente, um filho para os seus filhos. Porque a obra é de DEUS. Os filhos antes mesmo de serem nossos filhos, são nossos irmãos. Pois DEUS, o Criador, o seu PAI é o mesmo nosso PAI.</p>
+                    <p class="mb-4">Eis a nossa maior responsabilidade ao sermos pais. O milagre da criação é exclusivamente de DEUS. Já a responsabilidade à vida é nossa.</p>
+                    <p class="mb-4">Nasce o bebê, sendo admirado e cuidado em especial pelos principais responsáveis, os seus pais, amparados pela família. O bebê cresce, chega à idade adulta, casa e constitui uma nova família, com o mesmo consentimento.</p>
+                    <p class="mb-4">Os pais têm que conviver com este dilema. Se trabalham muito quando jovens para dar o melhor para seus filhos, acabam perdendo o convívio do dia a dia, logo não conseguem acompanhar seus filhos o quanto queriam, desejavam, o quanto precisavam, perdendo muitas vezes o seu crescimento, as suas peraltices.</p>
+                    <p class="mb-4">Quando avós, muitos já aposentados, com tempo disponível e suficiente, necessitam dar e receber carinho. Nesta fase, cuidar dos netos não é nenhum dever, é uma terapia, uma alegria. Eis o papel principal dos avôs e avós, preencher os espaço, as lacunas da vida com amor e carinho divididos mútuamente com seus netos. É por este e outros motivos, todo este apego. Não sei se por ciúme ou competição, esta proteção dos avós acaba sendo considerado pelos pais das crianças, um exagero.</p>
+                    <p class="mb-4">Netos, os filhos açucarados, filhos especiais. E assim é dado o prosseguimento, a continuidade a vida. ( A minha filha um dia me disse, Papai quando era eu o senhor não fazia assim, eu respondi em termos de brincadeira, você é filha, eles são netos).</p>
+                    <p class="mb-4">Somos responsáveis por esta corrente contínua, esta bola rolando, o prosseguimento da vida. O que importa muito para o nosso futuro é a formação de berço.</p>
+                    <p class="mb-4">Dizem que o bebê é como a memória de um computador, com muitos bytes, sendo preenchidos aos poucos, pelos Pais e educadores, com bons ensinamentos, uma boa criação, o amor, o carinho. O Comportamento dos bebês reside nas atitudes dos pais.</p>
+                    <p class="mb-4">A harmonia, o amor, o respeito entre os pais, isto é especial para que o bebê tenha uma boa vida, uma boa formação.</p>
+                    <p class="mb-4">As crianças mesmo antes de falar e andar já percebem tudo ao seu redor. Crianças capitam e guardam as coisas em sua memória com grande facilidade. Portanto, não discutam, não esbravejem, não faça algo perto de uma criança, pensando que ela não está percebendo. Não falam algo que possam prejudicar.</p>
+                    <p class="mb-4 font-semibold text-blue-600 dark:text-blue-400">A minha formação depende de você papai você mamãe. O NOSSO AMANHÃ É O RETRATO DO NOSSO HOJE.</p>
+                    <p class="mb-4 text-xs text-slate-500 dark:text-slate-400">Autor: De João de Brito Freires em homenagem ao meu neto Mateus nascido em 14/02/2014.</p>
+                `
             }
         };
         postsData["51-2013-angustias"] = postsData["51-2013-angústias"];
@@ -1254,6 +1360,7 @@
         postsData["44-2013-sofremos-e-por-que-queremos-parte-2"] = postsData["44-2013-sofremos-é-por-que-queremos-parte-2"];
         postsData["40-2014-caca-aos-gatos-ratos"] = postsData["40-2014-caça-aos-gatos-ratos"];
         postsData["38-2014-quer-viver-mais-feliz-use-tempero"] = postsData["38-2014-quer-viver-ainda-mais-feliz-use-tempero"];
+        postsData["37-2014-que-pais-e-este"] = postsData["37-2014-que-país-é-este"];
 
         // Modal Controls
         function openPostModal(id) {
